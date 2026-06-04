@@ -33,13 +33,15 @@ def main():
 
     df["n_timepoints_numeric"] = pd.to_numeric(df["n_timepoints"], errors="coerce").fillna(0)
 
+    has_sequence_features = (
+        df["has_variant_frequencies"].map(is_yes)
+        | df["data_type"].astype(str).str.contains("sequence|vcf|mutation|variant", case=False, na=False)
+    )
+
     df["phase2_minimum_pass"] = (
         df["n_timepoints_numeric"].ge(3)
         & df["has_day_mapping"].map(is_yes)
-        & (
-            df["has_variant_frequencies"].map(is_yes)
-            | df["data_type"].astype(str).str.contains("sequence|vcf|mutation", case=False, na=False)
-        )
+        & has_sequence_features
     )
 
     df["phase2_quality_score"] = 0
@@ -65,7 +67,7 @@ def main():
         "n_candidates": int(df["phase2_minimum_pass"].sum()),
     })
 
-    print(df[[
+    cols = [
         "case_id",
         "dataset_name",
         "data_type",
@@ -73,7 +75,8 @@ def main():
         "phase2_minimum_pass",
         "phase2_quality_score",
         "recommended_role",
-    ]].to_string(index=False))
+    ]
+    print(df[cols].to_string(index=False))
 
 if __name__ == "__main__":
     main()
