@@ -1,0 +1,39 @@
+phase: phase2_sarscov2_multicase
+status: scaffold
+
+purpose: >
+  Test whether the Phase I Kemp figure-source HRSM topology generalizes across
+  additional persistent SARS-CoV-2 cases or cohorts.
+
+minimum_admissibility:
+  min_timepoints: 3
+  require_day_or_date_mapping: true
+  require_sequence_or_mutation_features: true
+
+high_quality_case:
+  min_timepoints: 5
+  require_variant_frequencies: true
+  require_ct_or_viral_load: false
+  require_treatment_metadata: false
+  require_endpoint: false
+
+input_modes:
+  - longitudinal_variant_frequency_table
+  - excel_workbook
+  - sample_by_mutation_matrix
+  - vcf_derived_table
+  - consensus_sequence_trajectory
+  - raw_reads_after_audit
+
+phase1_reference_states:
+  - low_escape_baseline
+  - coherent_escape_surge
+  - alternate_diversity_state
+  - retained_escape_state
+  - high_memory_escape_return
+
+failure_guards:
+  - Do not infer within-host persistence from unrelated population consensus genomes.
+  - Do not use lineage labels as outcome labels.
+  - Do not treat missing sampling days as ordered row index.
+  - Do not compare raw and figure-source reconstructions without labeling source level.

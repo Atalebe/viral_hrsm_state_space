@@ -1,0 +1,2 @@
+case_id,dataset_name,virus,lineage_or_variant,source_reference,source_url,data_type,n_timepoints,has_day_mapping,has_variant_frequencies,has_ct_or_viral_load,has_treatment_metadata,has_host_context,has_endpoint,admissibility_status,notes,n_timepoints_numeric,phase2_minimum_pass,phase2_quality_score,recommended_role
+PLACEHOLDER_CASE,TO_BE_FILLED,SARS-CoV-2,TO_BE_FILLED,TO_BE_FILLED,TO_BE_FILLED,unknown,0,unknown,unknown,unknown,unknown,unknown,unknown,pending,Replace with real Phase II candidate after audit,0,False,0,reject_or_background

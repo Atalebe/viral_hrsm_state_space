@@ -522,3 +522,32 @@ Phase V, phage experimental evolution.
 
 \textbf{Failure guard:} The repository explicitly labels Phase I as a figure-source reconstruction, not a raw sequencing analysis. Raw sequencing-scale files are not committed. The public repository preserves scripts, metadata, results, figures, reports, and audit files needed to reproduce the locked pilot.
 
+
+\section*{Entry 024: Phase II SARS-CoV-2 multi-case scaffold initialized}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To begin Phase II as a cautious generalization test of the Phase I Kemp HRSM topology.
+
+\textbf{Phase II scope:} Phase II will test whether the Phase I topology recurs across additional persistent SARS-CoV-2 cases or cohorts. The target is not to prove a universal viral law, but to determine whether the separation between alternate diversity and retained escape/high-memory return appears outside the Kemp figure-source reconstruction.
+
+\textbf{Directories initialized:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/}
+    \item \texttt{data/raw/phase2\_sarscov2\_multicase/}
+    \item \texttt{data/interim/phase2\_sarscov2\_multicase/}
+    \item \texttt{data/processed/phase2\_sarscov2\_multicase/}
+    \item \texttt{results/phase2\_sarscov2\_multicase/}
+    \item \texttt{figures/phase2\_sarscov2\_multicase/}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/}
+    \item \texttt{docs/phase2\_sarscov2\_multicase/}
+\end{itemize}
+
+\textbf{Scripts added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/00\_initialize\_phase2.py}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/01\_validate\_phase2\_registry.py}
+\end{itemize}
+
+\textbf{Failure guard:} Phase II must not use unrelated population consensus genomes as if they were within-host trajectories. Each case must have ordered timepoints and explicit day or date mapping.
+
