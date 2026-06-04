@@ -487,3 +487,38 @@ Phase V, phage experimental evolution.
 
 \textbf{Boundary:} This is a figure-source reconstruction from one case. It is suitable for hypothesis generation, method validation, and later manuscript extraction, but not for universal viral claims.
 
+
+\section*{Entry 023: Public GitHub reproducibility repository initialized}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To prepare the viral HRSM repository for public reproducibility, reviewer inspection, and later manuscript extraction.
+
+\textbf{Repository:}
+\begin{itemize}
+    \item \texttt{git@github.com:Atalebe/viral\_hrsm\_state\_space.git}
+\end{itemize}
+
+\textbf{Reproducibility additions:}
+\begin{itemize}
+    \item Root \texttt{README.md} rewritten for referee-facing reproduction.
+    \item \texttt{LICENSE} and \texttt{CITATION.cff} added.
+    \item One-command Phase I runner added: \texttt{scripts/run\_phase1\_kemp\_pipeline.sh}.
+    \item Reproducibility notes added under \texttt{docs/reproducibility/}.
+    \item \texttt{Makefile} added for phase execution, report generation, inventory, and cleanup.
+    \item Phase I locked-output check added: \texttt{scripts/check\_phase1\_locked\_outputs.py}.
+    \item \texttt{.gitignore} revised to exclude large raw sequencing files while retaining referee-facing Phase I outputs.
+\end{itemize}
+
+\textbf{Final locked Phase I audit:}
+\begin{itemize}
+    \item \texttt{n\_hrsm\_rows = 20}
+    \item \texttt{n\_transition\_rows = 20}
+    \item \texttt{n\_daily\_rows = 16}
+    \item \texttt{n\_figures\_listed = 9}
+    \item \texttt{n\_missing\_figures = 0}
+    \item Stationary terminal states: \texttt{retained\_escape\_state} and \texttt{high\_memory\_escape\_return}, each with probability \(0.5\).
+\end{itemize}
+
+\textbf{Failure guard:} The repository explicitly labels Phase I as a figure-source reconstruction, not a raw sequencing analysis. Raw sequencing-scale files are not committed. The public repository preserves scripts, metadata, results, figures, reports, and audit files needed to reproduce the locked pilot.
+

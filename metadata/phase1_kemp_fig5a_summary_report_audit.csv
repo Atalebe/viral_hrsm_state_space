@@ -1,2 +1,2 @@
 report_md,report_tex,n_hrsm_rows,n_transition_rows,n_daily_rows,n_figures_listed,n_missing_figures,stationary_top_states,stationary_top_probs
-docs/phase1_kemp_fig5a_summary_report.md,docs/phase1_kemp_fig5a_summary_report.tex,20,20,16,9,0,retained_escape_state|high_memory_escape_return,0.5|0.5
+docs/phase1_kemp_fig5a_summary_report.md,docs/phase1_kemp_fig5a_summary_report.tex,20,20,16,9,0,retained_escape_state|high_memory_escape_return,0.5000000000000001|0.5

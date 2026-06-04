@@ -2,6 +2,7 @@ docs/phase1_kemp_fig5a_summary_report.md
 docs/phase1_kemp_fig5a_summary_report.tex
 docs/phase1_sarscov2_workplan.md
 docs/phase1_sarscov2_workplan.tex
+docs/reproducibility/PHASE1_REPRODUCIBILITY.md
 docs/viral_hrsm_branch_charter.tex
 figures/phase1_sarscov2/kemp_fig5a_colored_escape_memory_over_days.png
 figures/phase1_sarscov2/kemp_fig5a_colored_hrsm_axes_over_days.png

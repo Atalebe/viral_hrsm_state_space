@@ -11,4 +11,5 @@ dependencies:
   - pyyaml
   - biopython
   - statsmodels
+  - tabulate
   - pip

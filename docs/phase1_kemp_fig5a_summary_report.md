@@ -49,10 +49,10 @@ The strongest HRSM contrast is between the alternate diversity state and the ret
 |:--------------------------|-------------------------:|
 | retained_escape_state     |                      0.5 |
 | high_memory_escape_return |                      0.5 |
-| low_escape_baseline       |                      0   |
 | intermediate_transition   |                      0   |
-| alternate_diversity_state |                      0   |
+| low_escape_baseline       |                      0   |
 | coherent_escape_surge     |                      0   |
+| alternate_diversity_state |                      0   |
 
 The stationary distribution is computed by solving the linear stationary equations, not by power iteration. This matters because the daily-collapsed matrix contains a deterministic two-state terminal cycle. The stationary mass is therefore split evenly between retained_escape_state and high_memory_escape_return.
 
