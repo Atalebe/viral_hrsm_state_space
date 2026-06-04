@@ -1,6 +1,7 @@
 from pathlib import Path
 import pandas as pd
 import sys
+import math
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -24,8 +25,26 @@ for k, v in expected.items():
     if observed != v:
         errors.append(f"{k}: expected {v}, observed {observed}")
 
-if str(audit["stationary_top_probs"]) != "0.5|0.5":
-    errors.append(f"stationary_top_probs expected 0.5|0.5, observed {audit['stationary_top_probs']}")
+expected_states = "retained_escape_state|high_memory_escape_return"
+if str(audit["stationary_top_states"]) != expected_states:
+    errors.append(
+        f"stationary_top_states expected {expected_states}, observed {audit['stationary_top_states']}"
+    )
+
+try:
+    probs = [float(x) for x in str(audit["stationary_top_probs"]).split("|")]
+except Exception:
+    probs = []
+    errors.append(f"Could not parse stationary_top_probs: {audit['stationary_top_probs']}")
+
+if len(probs) != 2:
+    errors.append(f"stationary_top_probs expected two values, observed {audit['stationary_top_probs']}")
+else:
+    for observed, expected_prob in zip(probs, [0.5, 0.5]):
+        if not math.isclose(observed, expected_prob, rel_tol=1e-9, abs_tol=1e-9):
+            errors.append(
+                f"stationary probability expected {expected_prob}, observed {observed}"
+            )
 
 if errors:
     print("[FAIL] Phase I locked-output check failed:")
