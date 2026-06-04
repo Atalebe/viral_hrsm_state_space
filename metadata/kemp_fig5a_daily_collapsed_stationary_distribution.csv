@@ -1,0 +1,7 @@
+state,stationary_probability
+retained_escape_state,0.5
+high_memory_escape_return,0.5
+low_escape_baseline,0.0
+intermediate_transition,0.0
+alternate_diversity_state,0.0
+coherent_escape_surge,0.0

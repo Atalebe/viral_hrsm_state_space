@@ -1,0 +1,4 @@
+path,downloaded,reason,local_path,bytes_downloaded
+figure_data/Rawdata_forfigures.xlsx,True,small_allowed_file,data/interim/kemp_github_small/figure_data__Rawdata_forfigures.xlsx,23812
+figure_data/readme.md,True,small_allowed_file,data/interim/kemp_github_small/figure_data__readme.md,59
+vaccinepaper/with_background_subsampled_deduped_aligned_UKonly_484_vui.fasta.gz,False,skipped suffix=.gz size=3460643,,0

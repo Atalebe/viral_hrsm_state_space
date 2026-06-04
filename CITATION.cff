@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript or this repository snapshot."
+title: "Viral HRSM State Space"
+authors:
+  - family-names: "Atalebe"
+    given-names: "Stephen"
+repository-code: "https://github.com/Atalebe/viral_hrsm_state_space"
+date-released: "2026-06-04"
+version: "0.1.0-phase1-kemp"
+license: "MIT"

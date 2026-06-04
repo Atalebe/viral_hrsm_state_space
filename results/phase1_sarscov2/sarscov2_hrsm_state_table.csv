@@ -1,0 +1,2 @@
+case_id,timepoint,diversity,sequence_entropy,near_neutral_proxy,ct_decline_inverse,post_nadir_growth,culture_positive,haplotype_concentration,lineage_backbone,fragmentation_inverse,lagged_similarity,retained_escape,compensatory_structure,outcome_persistent,H_v,R_v,S_v,M_v,Phi_v
+example_case,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1,0.0,0.0,0.0,0.0,0.0

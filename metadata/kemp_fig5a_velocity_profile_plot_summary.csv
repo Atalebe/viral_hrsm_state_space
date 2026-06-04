@@ -1,0 +1,3 @@
+figure,description
+figures/phase1_sarscov2/kemp_fig5a_velocity_profiles_over_days.png,Step-normalized and calendar-day velocity profiles over true day axis.
+figures/phase1_sarscov2/kemp_fig5a_step_velocity_by_transition_state.png,Step-normalized velocity colored by transition state.

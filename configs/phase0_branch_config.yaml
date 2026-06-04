@@ -1,0 +1,27 @@
+project:
+  name: viral_hrsm_state_space
+  branch: viral_hrsm
+  version: 0.1.0
+  status: scaffold
+
+hrsm_axes:
+  H_v:
+    label: adaptive_reserve
+    description: Viable mutational breadth or adaptive reserve.
+  R_v:
+    label: rebound_recoverability
+    description: Recovery after perturbation, decline, therapy, bottleneck, or immune pressure.
+  S_v:
+    label: swarm_coherence
+    description: Coherence of viral population structure under mutation and selection.
+  M_v:
+    label: evolutionary_memory
+    description: Historical dependence through retained haplotypes, epistasis, resistance, or lagged states.
+
+phase_order:
+  - phase0_dataset_audit
+  - phase1_sarscov2_persistent_infection
+  - phase2_hiv_longitudinal_memory
+  - phase3_hcv_recurrence
+  - phase4_influenza_antigenic_drift
+  - phase5_phage_experimental_evolution

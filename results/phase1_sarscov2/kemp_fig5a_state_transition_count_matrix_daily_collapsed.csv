@@ -1,0 +1,7 @@
+from_state,low_escape_baseline,intermediate_transition,alternate_diversity_state,coherent_escape_surge,retained_escape_state,high_memory_escape_return
+low_escape_baseline,4,1,0,1,0,0
+intermediate_transition,1,0,1,0,0,0
+alternate_diversity_state,0,0,2,0,1,0
+coherent_escape_surge,0,1,0,0,0,0
+retained_escape_state,0,0,0,0,0,2
+high_memory_escape_return,0,0,0,0,1,0

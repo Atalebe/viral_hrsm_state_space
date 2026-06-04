@@ -1,0 +1,8 @@
+anchor_type,label,value,status,notes
+paper,Nature article,https://www.nature.com/articles/s41586-021-03291-y,known,Main paper.
+full_text,PMC full text,https://pmc.ncbi.nlm.nih.gov/articles/PMC7610568/,known,Open full-text copy for methods and data availability inspection.
+bioproject,NCBI BioProject,PRJNA682013,known,Reported BioProject for long-read sequencing data.
+sra_samples,NCBI SRA sample accession range,SAMN16976824-SAMN16976846,known,Reported sample accession range for long-read sequencing data.
+github,Steven-Kemp sequence_files,https://github.com/Steven-Kemp/sequence_files,known,Reported location for short reads and data used to construct figures.
+next_required,NCBI run-level query,query BioProject PRJNA682013,pending,Next script should query NCBI/ENA/SRA metadata for run accessions and file sizes before any download.
+next_required,GitHub file inventory,inventory Steven-Kemp/sequence_files,pending,"Next script should list repository files and identify variant-frequency, short-read, and figure-data tables."

@@ -1,0 +1,4 @@
+figure,description
+figures/phase1_sarscov2/kemp_fig5a_colored_hrsm_axes_over_days.png,Corrected HRSM axes plotted against true chronological days.
+figures/phase1_sarscov2/kemp_fig5a_colored_memory_stability_states.png,Colored transition states in M_v versus S_v space.
+figures/phase1_sarscov2/kemp_fig5a_colored_escape_memory_over_days.png,Escape-pair trajectory colored by transition state.

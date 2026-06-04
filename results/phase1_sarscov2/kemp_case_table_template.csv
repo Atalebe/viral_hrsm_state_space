@@ -1,0 +1,1 @@
+case_id,sample_id,timepoint_index,day_from_first_positive,day_from_admission,sample_type,consensus_sequence_id,variant_table_id,ct_value,viral_load,culture_status,treatment_phase,remdesivir_exposure,convalescent_plasma_exposure,major_spike_state,notes

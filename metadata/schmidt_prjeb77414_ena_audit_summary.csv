@@ -1,0 +1,2 @@
+accession,n_rows,n_unique_runs,n_unique_samples,has_fastq_ftp,has_submitted_ftp,has_bam_ftp
+PRJEB77414,0,0,0,False,False,False

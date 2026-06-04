@@ -1,0 +1,16 @@
+from_timepoint_label,to_timepoint_label,from_day,to_day,dt_raw,same_day_step,from_state,to_state
+1,37,1.0,37.0,36.0,False,low_escape_baseline,low_escape_baseline
+37,41,37.0,41.0,4.0,False,low_escape_baseline,low_escape_baseline
+41,45,41.0,45.0,4.0,False,low_escape_baseline,low_escape_baseline
+45,50,45.0,50.0,5.0,False,low_escape_baseline,low_escape_baseline
+50,55,50.0,55.0,5.0,False,low_escape_baseline,intermediate_transition
+55,66,55.0,66.0,11.0,False,intermediate_transition,low_escape_baseline
+66,82,66.0,82.0,16.0,False,low_escape_baseline,coherent_escape_surge
+82,86,82.0,86.0,4.0,False,coherent_escape_surge,intermediate_transition
+86,89,86.0,89.0,3.0,False,intermediate_transition,alternate_diversity_state
+89,93ETA*,89.0,93.0,4.0,False,alternate_diversity_state,alternate_diversity_state
+93ETA*,95,93.0,95.0,2.0,False,alternate_diversity_state,alternate_diversity_state
+95,98,95.0,98.0,3.0,False,alternate_diversity_state,retained_escape_state
+98,99,98.0,99.0,1.0,False,retained_escape_state,high_memory_escape_return
+99,100,99.0,100.0,1.0,False,high_memory_escape_return,retained_escape_state
+100,101,100.0,101.0,1.0,False,retained_escape_state,high_memory_escape_return

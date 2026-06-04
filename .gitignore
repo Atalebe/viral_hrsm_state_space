@@ -1,0 +1,46 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.DS_Store
+
+# Keep large/private raw data out of git.
+data/raw/*
+!data/raw/.gitkeep
+
+# Keep downloaded/interim files out unless explicitly whitelisted.
+data/interim/*
+!data/interim/.gitkeep
+!data/interim/kemp_fig5a_raw.csv
+!data/interim/kemp_github_small/
+!data/interim/kemp_github_small/figure_data__readme.md
+!data/interim/kemp_github_small/xlsx_previews/
+!data/interim/kemp_github_small/xlsx_previews/*.csv
+
+# Keep processed Phase I proxy tables.
+!data/processed/
+!data/processed/*.csv
+
+# Do not commit compressed sequencing or alignment files.
+*.fastq
+*.fq
+*.bam
+*.sam
+*.cram
+*.vcf.gz
+*.fastq.gz
+*.fq.gz
+*.fasta.gz
+*.fa.gz
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# Keep generated Phase I figures and result tables.
+!figures/
+!figures/phase1_sarscov2/
+!figures/phase1_sarscov2/*.png
+!results/
+!results/phase1_sarscov2/
+!results/phase1_sarscov2/*.csv

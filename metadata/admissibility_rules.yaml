@@ -1,0 +1,26 @@
+general:
+  admissible_if_at_least_three:
+    - longitudinal viral sequences
+    - ordered timepoints
+    - viral load, Ct value, culture status, or abundance proxy
+    - host immune or treatment context
+    - sequence depth suitable for within-host variation
+    - outcome label
+
+reject_if:
+  - unrelated consensus genomes only
+  - no time ordering
+  - missing minimal metadata
+  - outcome label directly duplicated into an axis variable
+
+phase1_sarscov2:
+  minimum:
+    min_ordered_sequence_timepoints: 3
+    require_one_of:
+      - viral_load_or_ct
+      - documented_persistence_duration
+  high_quality:
+    min_ordered_sequence_timepoints: 5
+    require_raw_reads_or_variant_calls: true
+    require_treatment_metadata: true
+    require_clinical_endpoint: true

@@ -1,0 +1,6 @@
+figure,description
+figures/phase1_sarscov2/kemp_fig5a_hrsm_axes_over_time.png,All four HRSM axes over ordered Fig. 5a timepoints.
+figures/phase1_sarscov2/kemp_fig5a_escape_mutations_over_time.png,D796H and del69/70 escape genotype frequency proxies.
+figures/phase1_sarscov2/kemp_fig5a_phi_over_time.png,Composite viral potential proxy Phi_v over ordered time.
+figures/phase1_sarscov2/kemp_fig5a_memory_vs_stability.png,"Memory-stability projection, useful for escape-state geometry."
+figures/phase1_sarscov2/kemp_fig5a_reserve_vs_memory.png,"Reserve-memory projection, useful for retained adaptive structure."

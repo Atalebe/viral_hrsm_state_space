@@ -1,0 +1,489 @@
+\section*{Entry 001: Viral HRSM branch initiated}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To test whether viral persistence, rebound, immune escape, and lineage survival can be represented as movement through a four-axis adaptive state space.
+
+\[
+\phi_v(t) = [H_v(t), R_v(t), S_v(t), M_v(t)].
+\]
+
+\textbf{Phase order:}
+Phase 0, dataset audit.
+Phase I, SARS-CoV-2 persistent infection.
+Phase II, HIV longitudinal memory.
+Phase III, HCV recurrence.
+Phase IV, influenza antigenic drift.
+Phase V, phage experimental evolution.
+
+\textbf{Immediate decision:} Begin with SARS-CoV-2 persistent infection only.
+
+\textbf{Failure guard:} Do not allow \(M_v\) to collapse into ordinary sequence divergence, sampling duration, or treatment labels.
+
+\section*{Entry 002: Phase I SARS-CoV-2 candidate registry and accession audit}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To replace placeholder viral candidates with a ranked SARS-CoV-2 persistent-infection registry and to separate biological relevance from actual data usability.
+
+\textbf{Outputs generated:}
+\begin{itemize}
+    \item \texttt{metadata/dataset\_candidate\_registry.csv}
+    \item \texttt{metadata/dataset\_candidate\_scores.csv}
+    \item \texttt{metadata/sarscov2\_accession\_audit.csv}
+    \item \texttt{metadata/phase1\_sarscov2\_ranked\_candidates.csv}
+    \item \texttt{docs/phase1\_sarscov2\_workplan.md}
+    \item \texttt{docs/phase1\_sarscov2\_workplan.tex}
+\end{itemize}
+
+\textbf{Current ranking:}
+\begin{enumerate}
+    \item Kemp et al., chronic infection under convalescent plasma, primary Phase I test case.
+    \item Schmidt et al., 521-day persistent infection, long-memory validation case.
+    \item Weigang et al., immunosuppressed within-host evolution, immune-escape validation case.
+    \item Harari et al., chronic infection adaptive evolution drivers, cross-case context and robustness.
+    \item Ghafari et al., community surveillance persistent infections, population background reference.
+\end{enumerate}
+
+\textbf{Interpretation:} The viral HRSM branch has moved from speculative framing to a staged dataset-audit structure. Kemp et al. is the leading Phase I opener because it offers dense longitudinal sequencing and treatment pressure. Schmidt et al. is the strongest long-memory case because the infection duration is extreme, although the reported timepoint count is smaller.
+
+\textbf{Failure guard:} No model should be run until accession availability and sample-level structure are confirmed. Dataset priority is not equivalent to usable data.
+
+
+\section*{Entry 003: First real data-contact script for Schmidt et al. ENA accession}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To test real data contact using the Schmidt et al. long-memory SARS-CoV-2 persistent infection accession \texttt{PRJEB77414}.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/11\_fetch\_schmidt\_ena\_metadata.py}
+\end{itemize}
+
+\textbf{Expected outputs:}
+\begin{itemize}
+    \item \texttt{metadata/schmidt\_prjeb77414\_ena\_read\_run.tsv}
+    \item \texttt{metadata/schmidt\_prjeb77414\_ena\_audit\_summary.csv}
+\end{itemize}
+
+\textbf{Interpretation rule:} This step retrieves metadata and file links only. It does not download FASTQ files. The aim is to verify whether the accession exposes run-level sequence data suitable for Phase I HRSM reconstruction.
+
+\textbf{Failure guard:} If the accession returns no run-level files, Schmidt remains a conceptual long-memory candidate but cannot be used as the first computational case unless supplementary data can be recovered elsewhere.
+
+
+\section*{Entry 003: First real data-contact script for Schmidt et al. ENA accession}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To test real data contact using the Schmidt et al. long-memory SARS-CoV-2 persistent infection accession \texttt{PRJEB77414}.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/11\_fetch\_schmidt\_ena\_metadata.py}
+\end{itemize}
+
+\textbf{Expected outputs:}
+\begin{itemize}
+    \item \texttt{metadata/schmidt\_prjeb77414\_ena\_read\_run.tsv}
+    \item \texttt{metadata/schmidt\_prjeb77414\_ena\_audit\_summary.csv}
+\end{itemize}
+
+\textbf{Interpretation rule:} This step retrieves metadata and file links only. It does not download FASTQ files. The aim is to verify whether the accession exposes run-level sequence data suitable for Phase I HRSM reconstruction.
+
+\textbf{Failure guard:} If the accession returns no run-level files, Schmidt remains a conceptual long-memory candidate but cannot be used as the first computational case unless supplementary data can be recovered elsewhere.
+
+
+\section*{Entry 004: Schmidt ENA accession returned no run-level files}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To record the first real data-contact result for the Schmidt et al. 521-day persistent SARS-CoV-2 infection candidate.
+
+\textbf{Result:} The ENA Portal \texttt{read\_run} query for \texttt{PRJEB77414} returned zero run-level rows, zero unique runs, zero unique samples, and no FASTQ, submitted, or BAM file links.
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/schmidt\_prjeb77414\_ena\_read\_run.tsv}
+    \item \texttt{metadata/schmidt\_prjeb77414\_ena\_audit\_summary.csv}
+    \item \texttt{metadata/sarscov2\_accession\_audit\_updated.csv}
+\end{itemize}
+
+\textbf{Interpretation:} Schmidt et al. remains a scientifically valuable long-memory SARS-CoV-2 case because the infection duration is extreme and the paper reports five whole-genome sequencing timepoints. However, the accession does not currently expose run-level ENA files through the tested endpoint. It should therefore be retained as biological context until a usable supplementary or repository-level data path is recovered.
+
+\textbf{Decision:} Pivot the first computational Phase I data-contact attempt back to Kemp et al., which remains the strongest dense longitudinal candidate.
+
+\textbf{Failure guard:} This negative result is retained. It prevents accidental overclaiming that Schmidt is immediately downloadable when the tested ENA endpoint does not support that claim.
+
+
+\section*{Entry 005: Kemp et al. Phase I data availability audit scaffold}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To pivot from the Schmidt ENA negative result to the Kemp et al. dense longitudinal SARS-CoV-2 chronic infection candidate.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/13\_audit\_kemp\_data\_availability.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/kemp\_data\_availability\_checklist.csv}
+    \item \texttt{metadata/kemp\_data\_availability\_summary.md}
+    \item \texttt{results/phase1\_sarscov2/kemp\_case\_table\_template.csv}
+\end{itemize}
+
+\textbf{Known anchors:} Kemp et al. reports whole-genome ultra-deep sequencing across 23 timepoints spanning 101 days in an immunosuppressed SARS-CoV-2 infection under remdesivir and convalescent plasma pressure. The major dynamic escape genotype includes Spike D796H and Spike \(\Delta H69/\Delta V70\).
+
+\textbf{HRSM relevance:} This case is suitable for first-pass viral HRSM because \(H_v\) can track mutational breadth, \(S_v\) can track coherence of the escape genotype, \(M_v\) can track disappearing and re-emerging genotype structure, and \(R_v\) may be recoverable from Ct, viral load, culture status, or treatment-response metadata if available.
+
+\textbf{Failure guard:} Kemp remains the biological Phase I opener, but computational modelling must wait until sample-day mapping and sequence or variant-frequency data are recovered.
+
+
+\section*{Entry 006: Kemp et al. concrete data anchors recorded}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To move Kemp et al. from a biological Phase I candidate to a concrete data-anchor candidate.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/14\_record\_kemp\_data\_anchors.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/kemp\_data\_anchors.csv}
+    \item \texttt{metadata/kemp\_expected\_sra\_samples.csv}
+    \item \texttt{metadata/kemp\_data\_anchor\_summary.md}
+\end{itemize}
+
+\textbf{Recorded anchors:} The Kemp et al. data availability trail identifies NCBI BioProject \texttt{PRJNA682013}, expected SRA sample accessions \texttt{SAMN16976824} through \texttt{SAMN16976846}, and the GitHub repository \texttt{Steven-Kemp/sequence\_files} for short reads and figure-construction data.
+
+\textbf{Interpretation:} Kemp et al. is now upgraded from a biological candidate to a concrete data-anchor candidate. The next step remains metadata-only: query run-level accessions, file names, file sizes, and repository contents before downloading any sequence files.
+
+\textbf{Failure guard:} Do not download large FASTQ or long-read files until run-level metadata and sample-day mapping are clear.
+
+
+\section*{Entry 007: Kemp GitHub repository inventory}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To inventory the \texttt{Steven-Kemp/sequence\_files} repository before downloading any files.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/15\_inventory\_kemp\_github.py}
+\end{itemize}
+
+\textbf{Expected files generated:}
+\begin{itemize}
+    \item \texttt{metadata/kemp\_github\_sequence\_files\_inventory.csv}
+    \item \texttt{metadata/kemp\_github\_hrsm\_candidate\_files.csv}
+    \item \texttt{metadata/kemp\_github\_inventory\_summary.md}
+\end{itemize}
+
+\textbf{Interpretation rule:} This step is metadata-only. It identifies candidate table, variant-frequency, sample-time, abundance-proxy, and figure-source files. It does not download sequence reads or large compressed files.
+
+\textbf{Failure guard:} Candidate file names are not evidence. A file becomes usable only after its contents are inspected and mapped to sample days, viral mutations, or HRSM axis proxies.
+
+
+\section*{Entry 007: Kemp GitHub repository inventory}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To inventory the \texttt{Steven-Kemp/sequence\_files} repository before downloading any files.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/15\_inventory\_kemp\_github.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/kemp\_github\_sequence\_files\_inventory.csv}
+    \item \texttt{metadata/kemp\_github\_hrsm\_candidate\_files.csv}
+    \item \texttt{metadata/kemp\_github\_inventory\_summary.md}
+\end{itemize}
+
+\textbf{Result:} The repository inventory found 54 files and 3 HRSM candidate files. The strongest immediate target is \texttt{figure\_data/Rawdata\_forfigures.xlsx}, a small table-like file. The compressed FASTA file under \texttt{vaccinepaper/} is deferred because it is not clearly the chronic-infection case table.
+
+\textbf{Decision:} Download and inspect only small table-like files next. Do not download compressed read, alignment, or background files yet.
+
+\textbf{Failure guard:} A GitHub file name is only a lead. A file becomes usable only after its contents are inspected and mapped to sample days, mutations, Ct values, treatment timing, or HRSM proxy variables.
+
+
+\section*{Entry 008: Kemp small candidate files downloaded and inspected}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To download only small table-like files from the Kemp GitHub inventory and inspect workbook structure without touching compressed sequence or read files.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/16\_download\_kemp\_small\_candidate\_tables.py}
+\end{itemize}
+
+\textbf{Expected files generated:}
+\begin{itemize}
+    \item \texttt{metadata/kemp\_downloaded\_small\_files.csv}
+    \item \texttt{metadata/kemp\_xlsx\_sheet\_inventory.csv}
+    \item \texttt{data/interim/kemp\_github\_small/}
+    \item \texttt{data/interim/kemp\_github\_small/xlsx\_previews/}
+\end{itemize}
+
+\textbf{Interpretation rule:} The workbook previews determine whether Kemp can move directly to a time-indexed HRSM proxy table. If sample-day mapping, mutation frequencies, Ct values, or treatment phases appear in the workbook, full FASTQ processing can remain deferred.
+
+\textbf{Failure guard:} Do not infer HRSM axes from figure-source tables until sheet names, columns, and row contents are inspected.
+
+
+\section*{Entry 009: Kemp Fig. 5a figure-source proxy table extracted}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To extract the first usable time-indexed SARS-CoV-2 HRSM proxy table from the Kemp et al. figure-source workbook.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/17\_extract\_kemp\_fig5a\_proxy\_features.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{data/interim/kemp\_fig5a\_raw.csv}
+    \item \texttt{data/processed/kemp\_fig5a\_proxy\_features.csv}
+    \item \texttt{results/phase1\_sarscov2/kemp\_fig5a\_hrsm\_state\_table.csv}
+    \item \texttt{metadata/kemp\_fig5a\_proxy\_audit.csv}
+\end{itemize}
+
+\textbf{Interpretation:} The \texttt{Fig 5a} sheet contains 23 rows with mutation-frequency-like columns for \texttt{D796H}, \texttt{del69/70}, \texttt{W64G}, \texttt{P330S}, \texttt{Y200H}, \texttt{T240I}, and \texttt{CT}. This supports a first figure-source reconstruction of \(H_v\), \(R_v\), \(S_v\), and \(M_v\).
+
+\textbf{Scientific caution:} This is not yet a raw sequencing analysis. It is a figure-source HRSM pilot table. The result can guide axis design, but any manuscript must label it as figure-source reconstruction unless raw variant calls or reads are processed later.
+
+\textbf{Failure guard:} Do not run predictive modelling from this single persistent case. The output is for trajectory geometry and axis debugging only.
+
+
+\section*{Entry 010: Kemp Fig. 5a proxy table cleaned}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To correct the initial Fig. 5a extraction by removing blank/footer rows and fixing the missing \texttt{case\_id} assignment.
+
+\textbf{Correction:} The first extraction retained 23 rows, but the final three rows were not biological timepoints. They were blank/footer rows from the figure-source workbook. The revised extraction retains only rows with mutation data and removes the non-biological footer rows.
+
+\textbf{Interpretation:} The cleaned table is now suitable for trajectory plotting and axis-debugging. It remains a figure-source reconstruction, not a raw sequencing analysis.
+
+\textbf{Failure guard:} Any HRSM values computed before this correction should be treated as deprecated because footer rows contaminated the standardization.
+
+
+\section*{Entry 011: Kemp Fig. 5a HRSM trajectory plotted}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To visualize the cleaned Kemp Fig. 5a figure-source HRSM trajectory across ordered mutation and Ct timepoints.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/18\_plot\_kemp\_fig5a\_hrsm\_trajectory.py}
+\end{itemize}
+
+\textbf{Figures generated:}
+\begin{itemize}
+    \item \texttt{figures/phase1\_sarscov2/kemp\_fig5a\_hrsm\_axes\_over\_time.png}
+    \item \texttt{figures/phase1\_sarscov2/kemp\_fig5a\_escape\_mutations\_over\_time.png}
+    \item \texttt{figures/phase1\_sarscov2/kemp\_fig5a\_phi\_over\_time.png}
+    \item \texttt{figures/phase1\_sarscov2/kemp\_fig5a\_memory\_vs\_stability.png}
+    \item \texttt{figures/phase1\_sarscov2/kemp\_fig5a\_reserve\_vs\_memory.png}
+\end{itemize}
+
+\textbf{Interpretation rule:} These plots are trajectory diagnostics from a figure-source reconstruction. They can be used to debug viral HRSM axis design and visualize the escape-memory structure, but they are not yet a final raw sequencing result.
+
+\textbf{Failure guard:} No predictive claims should be made from this single-case pilot. The value here is geometric inspection and non-Markovian axis design.
+
+
+\section*{Entry 012: Kemp Fig. 5a transition states classified}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To classify the cleaned Kemp Fig. 5a HRSM trajectory into provisional viral transition states.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/19\_classify\_kemp\_fig5a\_transition\_states.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{results/phase1\_sarscov2/kemp\_fig5a\_transition\_states.csv}
+    \item \texttt{metadata/kemp\_fig5a\_transition\_state\_summary.csv}
+\end{itemize}
+
+\textbf{Interpretation:} The provisional state labels are designed only for trajectory inspection. The key biological target is whether the D796H plus \(\Delta H69/\Delta V70\) escape structure behaves as a retained memory state, disappearing after one interval and later returning with high \(S_v\), \(M_v\), and \(\Phi_v\).
+
+\textbf{Failure guard:} These labels are heuristic. They are not clinical classes, not viral phenotypes, and not final model outputs. They exist to guide the next axis refinement and plotting step.
+
+
+\section*{Entry 013: Chronological correction for Kemp Fig. 5a HRSM pilot}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To correct the figure-source HRSM pilot after reviewer audit identified row-index memory, missing \texttt{*ETA} day anchors, CT dropout plateaus in \(R_v\), and index-based plotting.
+
+\textbf{Corrections applied:}
+\begin{itemize}
+    \item Manual day anchors were assigned to \texttt{93ETA*}, \texttt{99ETA*}, \texttt{100ETA*}, and \texttt{101ETA*}.
+    \item CT values were linearly interpolated over explicit day anchors before \(R_v\) proxy construction.
+    \item Signed numerical zero artefacts were collapsed to exact zero.
+    \item The memory proxy was changed from row-adjacent similarity to a chronological exponential-decay kernel.
+    \item Trajectory plots were switched from ordered row index to days since first positive RT-PCR.
+\end{itemize}
+
+\textbf{Interpretation:} This correction removes the main structural artefacts in the pilot vector space. Any previous HRSM coordinates or plots generated before this entry are deprecated.
+
+\textbf{Failure guard:} This remains a figure-source reconstruction. The correction improves internal mathematical consistency, but it does not convert the pilot into a raw sequencing analysis.
+
+
+\section*{Entry 014: Kemp transition-state labels refined}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To correct the transition-state classifier so that the first observed high-escape event is not mislabeled as a return.
+
+\textbf{Correction:} Day 82 is now treated as a coherent escape surge because it is the first observed high D796H plus \(\Delta H69/\Delta V70\) state in the figure-source trajectory. The later reappearance beginning around day 98 is retained as the candidate memory-return event.
+
+\textbf{Interpretation:} This improves the biological meaning of the state labels. The memory claim should be attached to re-emergence after the alternate diversity interval, not to the first observed escape surge.
+
+\textbf{Failure guard:} These labels remain heuristic trajectory annotations and should not be described as clinical classes or validated viral phenotypes.
+
+
+\section*{Entry 016: Velocity sensitivity split into all-step and calendar-day summaries}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To separate true calendar-day viral trajectory velocity from same-day sequencing contrast velocity.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/23\_summarize\_velocity\_sensitivity.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/kemp\_fig5a\_velocity\_summary\_all\_steps.csv}
+    \item \texttt{metadata/kemp\_fig5a\_velocity\_summary\_calendar\_only.csv}
+    \item \texttt{metadata/kemp\_fig5a\_velocity\_same\_day\_flags.csv}
+\end{itemize}
+
+\textbf{Interpretation:} Same-day samples are retained as useful sequencing contrasts, but they should not be mixed with calendar-day evolutionary velocity. The all-step velocity summary captures both calendar and sub-day structure, while the calendar-only summary is the safer biological velocity diagnostic.
+
+\textbf{Failure guard:} Manuscript language should avoid interpreting same-day \(\Delta t_{\mathrm{eff}}\) velocities as literal viral evolutionary speed. They are within-day contrast magnitudes, not calendar-time rates.
+
+
+\section*{Entry 017: Velocity engine normalized and state-transition matrix added}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To correct the sub-day velocity explosion and add an explicit state-transition matrix for the Kemp Fig. 5a pilot trajectory.
+
+\textbf{Scripts updated or added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/21\_compute\_phase\_velocity.py}
+    \item \texttt{scripts/phase1\_sarscov2/24\_plot\_velocity\_profiles.py}
+    \item \texttt{scripts/phase1\_sarscov2/25\_build\_state\_transition\_matrix.py}
+\end{itemize}
+
+\textbf{Correction:} Same-day sequencing contrasts are no longer divided by a synthetic \(\Delta t_{\mathrm{eff}} = 0.01\). The corrected velocity engine computes step-normalized velocities for all ordered transitions and calendar-day velocities only where true positive day intervals exist.
+
+\textbf{Interpretation:} This preserves within-day state changes without allowing sampling density to create artificial velocity explosions. The state-transition matrix records the observed directional movement among low escape baseline, coherent escape surge, alternate diversity state, retained escape state, and high-memory escape return.
+
+\textbf{Failure guard:} The transition probabilities are empirical frequencies from one figure-source trajectory. They are not general viral transition probabilities and should not be interpreted as population-level probabilities.
+
+
+\section*{Entry 019: Stationary distribution solver corrected and Phase II mapping deferred}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To correct the stationary-distribution calculation after the daily-collapsed transition matrix exposed a deterministic terminal two-state cycle.
+
+\textbf{Correction:} The stationary distribution is now computed by solving \(\pi P = \pi\) with \(\sum_i \pi_i = 1\), rather than by power iteration. This avoids numerical distortion in periodic chains, especially the deterministic retained-escape/high-memory two-state loop.
+
+\textbf{Interpretation:} The daily-collapsed Kemp Fig. 5a pilot identifies a terminal closed class linking \texttt{retained\_escape\_state} and \texttt{high\_memory\_escape\_return}. This should be described as an observed two-state terminal cycle in a figure-source reconstruction, not as proof of a universal or permanent viral attractor.
+
+\textbf{Phase II note:} The same daily-collapse, transition-matrix, velocity, and memory-kernel framework can later be mapped onto Phase II multi-case or cross-lineage SARS-CoV-2 datasets. That extension is deferred until Phase I is fully consolidated.
+
+\textbf{Failure guard:} The stationary distribution is derived from one reconstructed trajectory. It is a mathematical diagnostic of this case topology only and should not be interpreted as a population-level viral residence probability.
+
+
+\section*{Entry 020: Phase I Kemp Fig. 5a summary report generated}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To consolidate the cleaned Phase I Kemp figure-source HRSM pilot into a single markdown and LaTeX report before any Phase II expansion.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/27\_generate\_phase1\_summary\_report.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{docs/phase1\_kemp\_fig5a\_summary\_report.md}
+    \item \texttt{docs/phase1\_kemp\_fig5a\_summary\_report.tex}
+    \item \texttt{metadata/phase1\_kemp\_fig5a\_summary\_report\_audit.csv}
+\end{itemize}
+
+\textbf{Interpretation:} The Phase I pilot is now consolidated as a figure-source reconstruction. It documents the low-escape baseline, coherent escape surge, alternate diversity interval, retained escape state, and high-memory return cycle, with daily-collapsed transition matrices, stationary distribution, velocity diagnostics, potential-well summaries, and figure paths.
+
+\textbf{Failure guard:} This report is not a final manuscript and not a raw sequencing analysis. It is a reproducibility and extraction bridge for later manuscript drafting.
+
+
+\section*{Entry 021: Potential-well summary patched to use corrected velocity}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To remove the obsolete same-day-inflated velocity field from the Kemp Fig. 5a potential-well diagnostics.
+
+\textbf{Script updated:}
+\begin{itemize}
+    \item \texttt{scripts/phase1\_sarscov2/22\_plot\_potential\_wells.py}
+\end{itemize}
+
+\textbf{Correction:} The potential-well script now reads the corrected velocity table from \texttt{kemp\_fig5a\_phase\_velocity.csv}. It reports step-normalized velocity and calendar-day velocity separately, rather than the deprecated \texttt{velocity\_norm\_total} field.
+
+\textbf{Files regenerated:}
+\begin{itemize}
+    \item \texttt{results/phase1\_sarscov2/kemp\_fig5a\_potential\_wells.csv}
+    \item \texttt{metadata/kemp\_fig5a\_potential\_well\_summary.csv}
+    \item \texttt{figures/phase1\_sarscov2/kemp\_fig5a\_potential\_well\_over\_days.png}
+    \item \texttt{figures/phase1\_sarscov2/kemp\_fig5a\_potential\_vs\_escape\_pair.png}
+    \item \texttt{figures/phase1\_sarscov2/kemp\_fig5a\_potential\_vs\_step\_velocity.png}
+    \item \texttt{docs/phase1\_kemp\_fig5a\_summary\_report.md}
+    \item \texttt{docs/phase1\_kemp\_fig5a\_summary\_report.tex}
+\end{itemize}
+
+\textbf{Interpretation:} Potential-well depth remains defined as \(U_v=-\Phi_v\). Velocity is now treated only as a corrected companion diagnostic, separated into ordered step-space motion and calendar-day motion.
+
+\textbf{Failure guard:} Any potential-well summary generated before this patch should be treated as deprecated because it inherited the old same-day velocity inflation.
+
+
+\section*{Entry 022: Phase I Kemp Fig. 5a pilot locked}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To lock the completed Phase I Kemp Fig. 5a figure-source HRSM pilot after final consistency checks.
+
+\textbf{Final audit state:}
+\begin{itemize}
+    \item \texttt{n\_hrsm\_rows = 20}
+    \item \texttt{n\_transition\_rows = 20}
+    \item \texttt{n\_daily\_rows = 16}
+    \item \texttt{n\_figures\_listed = 9}
+    \item \texttt{n\_missing\_figures = 0}
+    \item Stationary top states: \texttt{retained\_escape\_state} and \texttt{high\_memory\_escape\_return}, each with probability \(0.5\).
+\end{itemize}
+
+\textbf{Interpretation:} The Phase I pilot identifies a reproducible figure-source topology: low escape baseline, coherent escape surge, alternate diversity interval, retained escape state, and high-memory escape return. The daily-collapsed transition matrix identifies a terminal two-state closed class between retained escape and high-memory return.
+
+\textbf{Boundary:} This is a figure-source reconstruction from one case. It is suitable for hypothesis generation, method validation, and later manuscript extraction, but not for universal viral claims.
+

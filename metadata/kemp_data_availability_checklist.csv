@@ -1,0 +1,13 @@
+item,status,value,notes
+paper_url,known,https://www.nature.com/articles/s41586-021-03291-y,Nature paper for Kemp et al. SARS-CoV-2 evolution during treatment of chronic infection.
+open_full_text,known,https://pmc.ncbi.nlm.nih.gov/articles/PMC7610568/,"PMC full-text mirror useful for methods, clinical timeline, and data availability inspection."
+reported_timepoints,known,23,Paper reports whole-genome ultra-deep sequencing across 23 timepoints.
+reported_duration_days,known,101,Persistent infection trajectory spans 101 days.
+host_context,known,immunosuppressed individual,"Case involved immune compromise, including lymphoma history and prior B-cell depletion context."
+treatment_pressure,known,remdesivir; convalescent plasma,"Two remdesivir courses early, then convalescent plasma, then final unsuccessful treatment course."
+major_escape_mutations,known,Spike D796H; Spike ΔH69/ΔV70,"Dynamic escape genotype after convalescent plasma, useful for M_v and S_v design."
+compensatory_structure,known,ΔH69/ΔV70 may compensate D796H infectivity defect,Useful for M_v because memory should not collapse into simple divergence.
+raw_reads_or_fastq,to_audit,unknown,Next script should inspect Data Availability and supplementary files for accessions or downloadable tables.
+variant_frequency_tables,to_audit,unknown,"Critical for first-pass H_v, S_v, and M_v without full FASTQ processing."
+ct_or_viral_load_table,to_audit,unknown,"Needed for R_v. If unavailable, R_v must be limited to clinical/treatment-timeline proxies."
+sample_day_mapping,to_audit,unknown,Needed to map the 23 timepoints into ordered viral HRSM states.

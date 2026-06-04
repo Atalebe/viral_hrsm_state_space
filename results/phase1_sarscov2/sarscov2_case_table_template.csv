@@ -1,0 +1,1 @@
+case_id,sample_id,timepoint,sample_date,days_from_first_sample,lineage,consensus_fasta_path,variant_table_path,ct_value,viral_load,culture_status,treatment_exposure,host_context,clinical_endpoint,notes

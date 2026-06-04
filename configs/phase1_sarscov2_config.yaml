@@ -1,0 +1,37 @@
+phase: phase1_sarscov2
+minimum_admissibility:
+  min_ordered_sequence_timepoints: 3
+  require_ct_or_documented_duration: true
+  allow_consensus_only: true
+  raw_reads_high_quality: true
+
+high_quality_case:
+  min_ordered_sequence_timepoints: 5
+  require_raw_reads_or_within_host_variants: true
+  require_treatment_metadata: true
+  require_endpoint: true
+
+axis_weights_initial:
+  H_v:
+    diversity: 1.0
+    sequence_entropy: 1.0
+    near_neutral_proxy: 1.0
+  R_v:
+    ct_decline_inverse: 1.0
+    post_nadir_growth: 1.0
+    culture_positive: 1.0
+  S_v:
+    haplotype_concentration: 1.0
+    lineage_backbone: 1.0
+    fragmentation_inverse: 1.0
+  M_v:
+    lagged_similarity: 1.0
+    retained_escape: 1.0
+    compensatory_structure: 1.0
+
+modeling:
+  random_seed: 42
+  standardize_axes: true
+  compare_models:
+    - markovian_current_state
+    - non_markovian_memory

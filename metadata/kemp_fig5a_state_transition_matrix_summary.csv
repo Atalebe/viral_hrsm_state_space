@@ -1,0 +1,13 @@
+matrix_type,state,n_outgoing_transitions,most_likely_next_state,most_likely_next_probability
+sample_order,low_escape_baseline,6.0,low_escape_baseline,0.6666666666666666
+sample_order,intermediate_transition,2.0,low_escape_baseline,0.5
+sample_order,alternate_diversity_state,4.0,alternate_diversity_state,0.75
+sample_order,coherent_escape_surge,1.0,intermediate_transition,1.0
+sample_order,retained_escape_state,5.0,retained_escape_state,0.6
+sample_order,high_memory_escape_return,1.0,retained_escape_state,1.0
+daily_collapsed,low_escape_baseline,6.0,low_escape_baseline,0.6666666666666666
+daily_collapsed,intermediate_transition,2.0,low_escape_baseline,0.5
+daily_collapsed,alternate_diversity_state,3.0,alternate_diversity_state,0.6666666666666666
+daily_collapsed,coherent_escape_surge,1.0,intermediate_transition,1.0
+daily_collapsed,retained_escape_state,2.0,high_memory_escape_return,1.0
+daily_collapsed,high_memory_escape_return,1.0,retained_escape_state,1.0

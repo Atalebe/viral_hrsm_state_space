@@ -1,0 +1,2 @@
+source_workbook,source_sheet,n_rows_raw,n_rows_retained,n_rows_removed_as_footer_or_blank,eta_day_map_applied,ct_interpolation,memory_kernel,mutation_columns_used,has_ct,has_ct_interpolated,source_level,interpretation_limit
+data/interim/kemp_github_small/figure_data__Rawdata_forfigures.xlsx,Fig 5a,23,20,3,True,linear_by_day_then_ffill_bfill,chronological_exp_decay_tau7_maxlag30,D796H|del69/70|W64G|P330S|Y200H|T240I,True,True,figure_source_reconstruction,"Pilot HRSM proxy table derived from figure-source workbook, not raw FASTQ or full variant calling."

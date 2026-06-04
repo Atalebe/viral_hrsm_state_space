@@ -1,0 +1,4 @@
+output,description
+figures/phase1_sarscov2/kemp_fig5a_daily_collapsed_transition_heatmap.png,Heatmap of daily-collapsed transition probabilities.
+figures/phase1_sarscov2/kemp_fig5a_daily_collapsed_stationary_distribution.png,Stationary distribution from linear stationary-equation solve.
+metadata/kemp_fig5a_daily_collapsed_stationary_distribution.csv,Stationary distribution table.

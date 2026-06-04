@@ -1,0 +1,97 @@
+\section*{Phase I SARS-CoV-2 HRSM Workplan}
+
+\textbf{Generated:} 2026-06-03
+
+\subsection*{Purpose}
+
+Phase I tests whether persistent SARS-CoV-2 infection can be represented as a viral HRSM state space defined by adaptive reserve, rebound capacity, swarm coherence, and retained evolutionary memory.
+
+\subsection*{Model comparison}
+
+The first model comparison is deliberately narrow:
+
+\begin{itemize}
+\item Markovian current-state model: \(H_v, R_v, S_v\).
+\item Non-Markovian memory model: \(H_v, R_v, S_v, M_v\).
+\end{itemize}
+
+\subsection*{Ranked candidate datasets}
+
+\subsubsection*{1. Kemp et al. chronic infection under convalescent plasma}
+\begin{itemize}
+\item \textbf{Paper:} Kemp et al., Nature 2021
+\item \textbf{URL:} https://www.nature.com/articles/s41586-021-03291-y
+\item \textbf{Data anchor:} Check paper Data Availability and supplementary materials
+\item \textbf{Reported timepoints:} 23
+\item \textbf{Reported duration days:} 101
+\item \textbf{Data strength:} very\_high
+\item \textbf{Recommended role:} primary\_phase1\_test\_case
+\item \textbf{Audit note:} Best first target. Whole-genome ultra-deep sequencing across 23 timepoints. Strong treatment-pressure structure.
+\end{itemize}
+
+\subsubsection*{2. Schmidt et al. 521-day persistent infection}
+\begin{itemize}
+\item \textbf{Paper:} Schmidt et al., npj Genomic Medicine 2025
+\item \textbf{URL:} https://www.nature.com/articles/s41525-025-00463-x
+\item \textbf{Data anchor:} ENA PRJEB77414
+\item \textbf{Reported timepoints:} 5
+\item \textbf{Reported duration days:} 521
+\item \textbf{Data strength:} high
+\item \textbf{Recommended role:} long\_memory\_case
+\item \textbf{Audit note:} Excellent memory branch because duration is extreme. Fewer timepoints than Kemp, but long temporal span is useful for M\_v.
+\end{itemize}
+
+\subsubsection*{3. Weigang et al. immunosuppressed within-host evolution}
+\begin{itemize}
+\item \textbf{Paper:} Weigang et al., Nature Communications 2021
+\item \textbf{URL:} https://www.nature.com/articles/s41467-021-26602-3
+\item \textbf{Data anchor:} Check Data Availability, supplementary files, and sequence repositories
+\item \textbf{Reported timepoints:} to\_audit
+\item \textbf{Reported duration days:} to\_audit
+\item \textbf{Data strength:} medium\_high
+\item \textbf{Recommended role:} immune\_escape\_validation\_case
+\item \textbf{Audit note:} Good immune-escape trajectory. Needs accession-level check before becoming a primary case.
+\end{itemize}
+
+\subsubsection*{4. Harari et al. chronic infection adaptive evolution drivers}
+\begin{itemize}
+\item \textbf{Paper:} Harari et al., Nature Medicine 2022
+\item \textbf{URL:} https://www.nature.com/articles/s41591-022-01882-4
+\item \textbf{Data anchor:} Check supplementary tables and public sequence identifiers
+\item \textbf{Reported timepoints:} multi\_case
+\item \textbf{Reported duration days:} multi\_case
+\item \textbf{Data strength:} medium
+\item \textbf{Recommended role:} cross\_case\_context\_and\_robustness
+\item \textbf{Audit note:} Important chronic-infection context across 27 infections, but may be less clean as the first mechanistic HRSM case.
+\end{itemize}
+
+\subsubsection*{5. Ghafari et al. community surveillance persistent infections}
+\begin{itemize}
+\item \textbf{Paper:} Ghafari et al., Nature 2024
+\item \textbf{URL:} https://www.nature.com/articles/s41586-024-07029-4
+\item \textbf{Data anchor:} Check study data access conditions and supplementary metadata
+\item \textbf{Reported timepoints:} large\_surveillance
+\item \textbf{Reported duration days:} 30\_to\_60\_plus
+\item \textbf{Data strength:} medium
+\item \textbf{Recommended role:} background\_population\_reference
+\item \textbf{Audit note:} Excellent for population-scale framing, not the first mechanistic within-host HRSM case.
+\end{itemize}
+
+\subsection*{Phase I execution sequence}
+\begin{enumerate}
+\item Verify accession and supplementary data availability for Kemp et al.
+\item Build a case-level sample table for the Kemp trajectory.
+\item Extract sequence, timepoint, treatment, and abundance proxies.
+\item Compute first-pass \(H_v\), \(R_v\), \(S_v\), and \(M_v\) axes.
+\item Run leakage audit, axis correlation audit, and sampling-duration audit.
+\item Compare current-state and memory-augmented models.
+\item Repeat only after the first case pipeline is stable.
+\end{enumerate}
+
+\subsection*{Failure rules}
+\begin{itemize}
+\item Do not treat dataset priority as proof of data usability.
+\item Do not use treatment status as both an axis component and a predicted endpoint.
+\item Do not let \(M_v\) collapse into ordinary genetic divergence.
+\item Do not interpret viral persistence as organism-level homeostasis.
+\end{itemize}
