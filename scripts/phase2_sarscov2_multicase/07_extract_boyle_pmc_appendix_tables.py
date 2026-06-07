@@ -43,7 +43,6 @@ def table_to_dataframe(table):
     max_len = max(len(r) for r in rows)
     rows = [r + [""] * (max_len - len(r)) for r in rows]
 
-    # If first row looks like header, use it.
     header = rows[0]
     body = rows[1:] if len(rows) > 1 else []
 
@@ -61,7 +60,6 @@ def main():
 
     appendix = soup.find(id="app1-viruses-17-01313")
     if appendix is None:
-        # fallback: find any appendix-ish section
         appendix = soup.find(id=re.compile(r"app1|supplement", re.I))
 
     if appendix is None:
@@ -70,7 +68,6 @@ def main():
     appendix_text = appendix.get_text("\n", strip=True)
     OUT_TEXT.write_text(appendix_text, encoding="utf-8")
 
-    # Extract LC sample IDs from appendix and entire page.
     full_text = soup.get_text("\n", strip=True)
     lc_hits = sorted(set(re.findall(r"\bLC-\d+\b", full_text)))
     lc_rows = [{"sample_title": x, "source": "pmc_full_text"} for x in lc_hits]
@@ -80,11 +77,16 @@ def main():
     table_dir = OUT_DIR / "boyle_pmc_appendix_tables"
     table_dir.mkdir(parents=True, exist_ok=True)
 
-    # Tables inside appendix.
     for i, table in enumerate(appendix.find_all("table"), start=1):
         df = table_to_dataframe(table)
         out_csv = table_dir / f"appendix_table_{i}.csv"
         df.to_csv(out_csv, index=False)
+
+        contains_lc = False
+        if len(df):
+            contains_lc = df.astype(str).apply(
+                lambda col: col.str.contains(r"LC-\d+", regex=True, na=False)
+            ).any().any()
 
         table_rows.append({
             "table_scope": "appendix",
@@ -93,12 +95,11 @@ def main():
             "n_cols": len(df.columns),
             "columns": "|".join(map(str, df.columns)),
             "csv_path": str(out_csv.relative_to(ROOT)),
-            "contains_lc_sample_ids": df.astype(str).apply(lambda col: col.str.contains(r"LC-\d+", regex=True, na=False)).any().any() if len(df) else False,
+            "contains_lc_sample_ids": contains_lc,
         })
 
     pd.DataFrame(table_rows).to_csv(OUT_TABLES, index=False)
 
-    # Also extract the normal article tables accessible by /table/... links from the PMC page.
     linked_rows = []
     linked_dir = OUT_DIR / "boyle_pmc_linked_tables"
     linked_dir.mkdir(parents=True, exist_ok=True)
@@ -123,6 +124,12 @@ def main():
             out_csv = linked_dir / f"linked_table_{i}.csv"
             df.to_csv(out_csv, index=False)
 
+            contains_lc = False
+            if len(df):
+                contains_lc = df.astype(str).apply(
+                    lambda col: col.str.contains(r"LC-\d+", regex=True, na=False)
+                ).any().any()
+
             linked_rows.append({
                 "source_url": url,
                 "table_index": i,
@@ -130,7 +137,7 @@ def main():
                 "n_cols": len(df.columns),
                 "columns": "|".join(map(str, df.columns)),
                 "csv_path": str(out_csv.relative_to(ROOT)),
-                "contains_lc_sample_ids": df.astype(str).apply(lambda col: col.str.contains(r"LC-\d+", regex=True, na=False)).any().any() if len(df) else False,
+                "contains_lc_sample_ids": contains_lc,
             })
         except Exception as exc:
             linked_rows.append({
