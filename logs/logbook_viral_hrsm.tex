@@ -664,3 +664,20 @@ Phase V, phage experimental evolution.
 
 \textbf{Failure guard:} Date order across unrelated samples must not be treated as within-host viral evolution. Boyle remains blocked for HRSM modelling until patient-level grouping is recovered from Supplemental Table S1 or another source.
 
+
+\section*{Entry 032: Boyle registry status updated after temporal grouping audit}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To update the Phase II registry after Boyle BioSample expansion and temporal grouping audit.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/10\_update\_phase2\_registry\_after\_boyle\_audit.py}
+\end{itemize}
+
+\textbf{Interpretation:} Boyle has strong run-level and BioSample metadata. The BioProject returns 50 runs, and BioSample records provide collection dates and GISAID accessions for all 50 samples. However, no patient or infection grouping is exposed in the recovered metadata. Boyle is therefore date-mapped but not patient-grouped.
+
+\textbf{Decision:} Boyle remains blocked for HRSM trajectory extraction until Supplemental Table S1 or another source provides patient/infection IDs and longitudinal grouping.
+
+\textbf{Failure guard:} The 50 Boyle samples must not be treated as one chronological within-host trajectory. Date order across unrelated samples is not viral memory.
