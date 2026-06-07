@@ -1,0 +1,6 @@
+Supplementary Materials
+The following supporting information can be downloaded at:
+https://www.mdpi.com/article/10.3390/v17101313/s1
+, Supplemental Figure S1: Intra-host diversity of SARS-CoV-2 by patient and open reading frame; Supplemental Table S1: GISAID and NCBI Accession numbers for deposited sequences in this study; Supplemental Table S2: Mutational frequency at positions in Spike.
+viruses-17-01313-s001.zip
+(332.5KB, zip)

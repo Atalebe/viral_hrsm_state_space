@@ -595,3 +595,51 @@ Phase V, phage experimental evolution.
 
 \textbf{Failure guard:} No FASTQ files should be downloaded until the sample-day mapping template is completed or a supplementary table provides the required patient-time structure.
 
+
+\section*{Entry 029: Boyle PMC appendix and table extraction}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To recover Boyle supplementary and article table metadata directly from the PMC page after the PMC binary supplement link returned an HTML download-preparation page instead of a ZIP payload.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/07\_extract\_boyle\_pmc\_appendix\_tables.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_pmc\_appendix\_text.txt}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_pmc\_appendix\_tables\_inventory.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_pmc\_linked\_tables\_inventory.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_pmc\_lc\_sample\_hits.csv}
+\end{itemize}
+
+\textbf{Interpretation:} This step attempts to recover sample identifiers, table metadata, and supplementary content directly from the PMC HTML. The immediate target is to find whether LC sample titles from the ENA manifest appear in article or appendix tables.
+
+\textbf{Failure guard:} If LC sample IDs are absent from the PMC table text, the sample-day mapping must be recovered from the publisher supplement manually or through an alternate download path before Boyle can enter HRSM extraction.
+
+
+\section*{Entry 029: Boyle PMC appendix and table extraction}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To recover Boyle supplementary and article table metadata directly from the PMC page after the PMC binary supplement link returned an HTML download-preparation page instead of a ZIP payload.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/07\_extract\_boyle\_pmc\_appendix\_tables.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_pmc\_appendix\_text.txt}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_pmc\_appendix\_tables\_inventory.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_pmc\_linked\_tables\_inventory.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_pmc\_lc\_sample\_hits.csv}
+\end{itemize}
+
+\textbf{Interpretation:} This step attempts to recover sample identifiers, table metadata, and supplementary content directly from the PMC HTML. The immediate target is to find whether LC sample titles from the ENA manifest appear in article or appendix tables.
+
+\textbf{Failure guard:} If LC sample IDs are absent from the PMC table text, the sample-day mapping must be recovered from the publisher supplement manually or through an alternate download path before Boyle can enter HRSM extraction.
+
