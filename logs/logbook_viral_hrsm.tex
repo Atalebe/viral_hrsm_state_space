@@ -617,3 +617,50 @@ Phase V, phage experimental evolution.
 \textbf{Interpretation:} This step attempts to recover sample identifiers, table metadata, and supplementary content directly from the PMC HTML. The immediate target is to find whether LC sample titles from the ENA manifest appear in article or appendix tables.
 
 \textbf{Failure guard:} If LC sample IDs are absent from the PMC table text, the sample-day mapping must be recovered from the publisher supplement manually or through an alternate download path before Boyle can enter HRSM extraction.
+
+\section*{Entry 030: Boyle BioSample metadata expanded}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To query NCBI BioSample metadata for all Boyle \texttt{SAMN} sample accessions after PMC and supplement-download routes failed to expose LC sample-day mapping directly.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/08\_expand\_boyle\_biosample\_metadata.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_biosample\_metadata.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_run\_manifest\_with\_biosample\_metadata.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_biosample\_metadata\_summary.csv}
+\end{itemize}
+
+\textbf{Interpretation:} This step attempts to recover collection dates, isolate labels, host fields, and any patient/time grouping metadata from NCBI BioSample records. Boyle remains non-HRSM-ready until the sample-day or patient-time mapping is confirmed.
+
+\textbf{Failure guard:} BioSample metadata may expose sample-level attributes but not necessarily longitudinal grouping. If collection dates or patient identifiers remain absent, Supplemental Table S1 must still be recovered through a manual or alternate route.
+
+
+\section*{Entry 031: Boyle temporal metadata audited}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To determine whether BioSample metadata is sufficient to convert Boyle from a run-level Phase II candidate into a patient-level longitudinal HRSM dataset.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/09\_audit\_boyle\_temporal\_grouping.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_temporal\_metadata\_timeline.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_temporal\_grouping\_audit\_summary.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_collection\_date\_counts.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_candidate\_date\_series.csv}
+\end{itemize}
+
+\textbf{Interpretation:} BioSample metadata provides collection dates, host fields, geographic fields, and GISAID accession attributes for the Boyle samples. This is sufficient for date mapping but not sufficient for HRSM trajectory extraction unless patient or infection grouping is recovered.
+
+\textbf{Failure guard:} Date order across unrelated samples must not be treated as within-host viral evolution. Boyle remains blocked for HRSM modelling until patient-level grouping is recovered from Supplemental Table S1 or another source.
+

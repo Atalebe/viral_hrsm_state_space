@@ -39,7 +39,7 @@ def main():
     if missing:
         raise ValueError(f"Missing expected ENA columns: {missing}")
 
-    out = pd.DataFrame()
+    out = pd.DataFrame(index=df.index)
     out["case_id"] = "BOYLE_2025_PRJNA1295507"
     out["run_accession"] = df["run_accession"]
     out["sample_accession"] = df["sample_accession"]

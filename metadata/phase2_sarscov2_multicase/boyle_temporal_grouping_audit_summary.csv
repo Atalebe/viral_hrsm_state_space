@@ -1,0 +1,2 @@
+case_id,n_rows,n_unique_samples,n_unique_runs,n_collection_dates,n_gisaid_accessions,n_possible_patient_columns,possible_patient_columns,has_patient_or_infection_grouping,has_collection_date_mapping,phase2_status,next_required
+BOYLE_2025_PRJNA1295507,50,50,50,48,50,0,,False,True,date_mapped_but_not_patient_grouped,recover Supplemental Table S1 or another source with patient/infection IDs and timepoint grouping

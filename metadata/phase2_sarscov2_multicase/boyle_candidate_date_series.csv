@@ -1,0 +1,3 @@
+collection_date,n_samples,sample_titles,run_accessions,interpretation
+2020-04-28,2,LC-08331|LC-08368,SRR34737029|SRR34737014,same collection date cluster only; not patient-level longitudinal grouping
+2021-03-08,2,LC-0426|LC-10380,SRR34737004|SRR34737032,same collection date cluster only; not patient-level longitudinal grouping
