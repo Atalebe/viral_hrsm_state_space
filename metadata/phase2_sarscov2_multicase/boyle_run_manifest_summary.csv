@@ -1,0 +1,2 @@
+case_id,n_runs,n_samples,n_sample_titles,n_runs_with_fastq,n_runs_with_submitted,n_runs_with_bam,total_read_count,total_base_count,metadata_usable_runs,next_required
+BOYLE_2025_PRJNA1295507,50,50,50,50,1,0,4596173.0,1807256712.0,50,recover sample-day mapping and patient/case grouping before HRSM extraction

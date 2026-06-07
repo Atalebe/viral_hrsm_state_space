@@ -572,3 +572,26 @@ Phase V, phage experimental evolution.
 
 \textbf{Failure guard:} BioProject existence alone is not sufficient for Phase II modelling. The accession audit must confirm usable run-level files and later sample-day mapping.
 
+
+\section*{Entry 026: Boyle Phase II run manifest built}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To convert the Boyle \texttt{PRJNA1295507} ENA run-level audit into a structured Phase II run manifest without downloading raw sequence files.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/04\_build\_boyle\_run\_manifest.py}
+\end{itemize}
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_run\_manifest.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/boyle\_run\_manifest\_summary.csv}
+    \item \texttt{data/interim/phase2\_sarscov2\_multicase/boyle\_sample\_day\_mapping\_template.csv}
+\end{itemize}
+
+\textbf{Interpretation:} Boyle is now a real Phase II data-contact candidate because the BioProject returns run-level metadata and file links. It is not yet HRSM-ready because sample-day mapping, patient or infection grouping, and longitudinal structure still need to be recovered.
+
+\textbf{Failure guard:} No FASTQ files should be downloaded until the sample-day mapping template is completed or a supplementary table provides the required patient-time structure.
+
