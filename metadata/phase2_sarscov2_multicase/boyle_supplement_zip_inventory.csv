@@ -1,0 +1,2 @@
+zip_file,member_name,file_size,compress_size,suffix,status,error
+data/interim/phase2_sarscov2_multicase/boyle_supplements/viruses-17-01313-s001.zip,,0,0,,not_a_zip_or_download_failed,Downloaded payload did not have ZIP signature.
