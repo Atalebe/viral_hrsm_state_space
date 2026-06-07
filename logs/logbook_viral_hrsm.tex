@@ -551,3 +551,24 @@ Phase V, phage experimental evolution.
 
 \textbf{Failure guard:} Phase II must not use unrelated population consensus genomes as if they were within-host trajectories. Each case must have ordered timepoints and explicit day or date mapping.
 
+
+\section*{Entry 025: Phase II accession audit initiated}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To begin Phase II data-contact auditing with accession-level metadata retrieval rather than direct data download.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/03\_audit\_phase2\_accessions.py}
+\end{itemize}
+
+\textbf{Initial target:}
+\begin{itemize}
+    \item \texttt{BOYLE\_2025\_PRJNA1295507}
+\end{itemize}
+
+\textbf{Interpretation rule:} This step queries run-level metadata and file-link availability only. It does not download raw sequence files. A candidate becomes computationally actionable only after run rows, sample mapping, file links, and longitudinal structure are confirmed.
+
+\textbf{Failure guard:} BioProject existence alone is not sufficient for Phase II modelling. The accession audit must confirm usable run-level files and later sample-day mapping.
+
