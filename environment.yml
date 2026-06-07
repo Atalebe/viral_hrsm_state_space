@@ -12,4 +12,5 @@ dependencies:
   - biopython
   - statsmodels
   - tabulate
+  - beautifulsoup4
   - pip

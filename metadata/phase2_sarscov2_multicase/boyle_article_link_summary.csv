@@ -1,0 +1,3 @@
+url,fetch_ok,status,error,title,html_chars,text_chars,accession_hits,n_accession_hits,mentions_supplement,mentions_table_s1
+https://www.mdpi.com/1999-4915/17/10/1313,False,403,HTTPError: 403 Forbidden,,0,0,,0,False,False
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12567731/,True,200,,Intra-Host Evolution of SARS-CoV-2 During Persistent Infection of Pediatric COVID-19 Patients - PMC,268208,83266,PRJNA1295507,1,True,True
