@@ -1,0 +1,2 @@
+case_id,n_run_manifest_rows,n_unique_samples,n_biosample_rows,n_parsed,n_collection_date,n_isolate,n_strain,n_host,n_host_disease,n_geo_loc_name,next_required
+BOYLE_2025_PRJNA1295507,50,50,50,50,50,50,0,50,50,50,"inspect biosample attributes for patient/time grouping; if collection_date absent, recover Supplemental Table S1 manually"
