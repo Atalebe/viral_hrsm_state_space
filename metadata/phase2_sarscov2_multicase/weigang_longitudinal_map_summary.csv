@@ -1,0 +1,2 @@
+case_id,n_total_runs,n_primary_swab_runs,n_isolate_controls,n_unknown_sample_type,n_missing_day,primary_min_day,primary_max_day,primary_days,host_subject_ids,mapping_status,interpretation
+WEIGANG_2021_ERP132087,12,9,3,0,0,0,140,0|7|14|42|56|59|71|105|140,1|WEIGANG_SUBJECT_1,hrsm_ready_primary_swab_trajectory,Use swab samples as the primary within-host HRSM trajectory; retain isolate samples as controls or validation material.

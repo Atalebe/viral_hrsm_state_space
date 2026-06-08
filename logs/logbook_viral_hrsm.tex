@@ -745,3 +745,19 @@ Phase V, phage experimental evolution.
 
 \textbf{Failure guard:} No raw FASTQ files should be downloaded until sample-day mapping is recovered or the BioSample/sample-title metadata clearly encode the longitudinal order.
 
+
+\section*{Entry 036: Weigang longitudinal trajectory mapped}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To convert Weigang from a run-level accession success into the first mapped Phase II longitudinal SARS-CoV-2 HRSM candidate.
+
+\textbf{Scripts added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/15\_build\_weigang\_longitudinal\_map.py}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/16\_update\_phase2\_registry\_after\_weigang\_mapping.py}
+\end{itemize}
+
+\textbf{Interpretation:} Weigang sample titles encode longitudinal days. The swab samples define the primary within-host trajectory, while isolate samples are retained as controls. This makes Weigang the first true Phase II mapping candidate after Boyle was blocked by missing patient grouping and Chaguza exposed no accession candidates.
+
+\textbf{Failure guard:} Weigang is mapping-ready, not raw-feature-ready. HRSM extraction should wait until mutation-frequency or raw-derived feature construction is planned explicitly.
