@@ -783,3 +783,18 @@ Phase V, phage experimental evolution.
 \textbf{Interpretation:} The Weigang trajectory is mapped across nine primary swab timepoints from day 0 to day 140. The scaffold records technical metadata and explicit placeholders for the raw-derived mutation, stability, and memory features required for real HRSM extraction.
 
 \textbf{Failure guard:} The metadata scaffold is not a viral HRSM result. Sequencing depth must not be mistaken for biological reserve, recoverability, stability, or memory.
+
+\section*{Entry 038: Weigang primary swab raw-download plan created}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To create a raw-data download plan for the mapped Weigang primary swab trajectory without downloading raw files.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/18\_plan\_weigang\_primary\_swab\_downloads.py}
+\end{itemize}
+
+\textbf{Interpretation:} The plan restricts raw download scope to the nine primary swab timepoints. Isolate controls are excluded from the initial raw-feature extraction branch. Submitted FASTQ links are preferred where available.
+
+\textbf{Failure guard:} Raw files remain planned, not downloaded. The extraction protocol must be frozen before any large files are pulled into the workspace.

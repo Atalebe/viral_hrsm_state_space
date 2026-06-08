@@ -1,0 +1,2 @@
+case_id,n_primary_swab_timepoints,n_runs,n_planned_files,preferred_sources,total_read_count,total_base_count,days,download_ready,next_required
+WEIGANG_2021_ERP132087,9,9,18,submitted_ftp,13945596.0,1995404686.0,0|7|14|42|56|59|71|105|140,False,freeze raw-feature extraction protocol before downloading FASTQ/BAM files
