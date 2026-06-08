@@ -1,0 +1,2 @@
+case_id,n_run_manifest_rows,n_unique_samples,n_biosample_rows,n_parsed,n_collection_date,n_isolate,n_strain,n_host,n_host_disease,n_geo_loc_name,next_required
+WEIGANG_2021_ERP132087,12,12,12,11,0,11,0,0,0,0,inspect sample titles and BioSample attributes for day/timepoint labels; compare to paper figure timeline

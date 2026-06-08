@@ -728,3 +728,20 @@ Phase V, phage experimental evolution.
 \end{itemize}
 
 \textbf{Failure guard:} Weigang should proceed only if accession-level files, longitudinal sample mapping, or extractable mutation-frequency tables are recovered.
+
+\section*{Entry 035: Weigang run manifest and BioSample metadata expanded}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To convert the Weigang \texttt{ERP132087} accession audit into a structured run manifest and BioSample metadata table.
+
+\textbf{Scripts added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/13\_build\_weigang\_run\_manifest.py}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/14\_expand\_weigang\_biosample\_metadata.py}
+\end{itemize}
+
+\textbf{Interpretation:} Weigang now has run-level ENA access through \texttt{ERP132087}. The immediate question is whether the 12 samples expose enough date, title, or timepoint metadata to reconstruct a single-patient longitudinal trajectory.
+
+\textbf{Failure guard:} No raw FASTQ files should be downloaded until sample-day mapping is recovered or the BioSample/sample-title metadata clearly encode the longitudinal order.
+
