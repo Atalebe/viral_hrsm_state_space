@@ -1,0 +1,73 @@
+case_id: WEIGANG_2021_ERP132087
+phase: phase2_sarscov2_multicase
+branch: raw_feature_protocol
+status: frozen_before_download
+
+primary_trajectory:
+  sample_type: swab_primary
+  days: [0, 7, 14, 42, 56, 59, 71, 105, 140]
+  n_timepoints: 9
+
+controls:
+  include_in_primary_trajectory: false
+  sample_type: isolate_control
+  days: [14, 105, 105]
+
+reference:
+  genome: NC_045512.2
+  label: SARS-CoV-2 Wuhan-Hu-1
+  directory: references/sarscov2
+
+input:
+  source: ENA submitted paired FASTQ
+  download_plan: metadata/phase2_sarscov2_multicase/weigang_primary_swab_download_plan.csv
+  raw_download_ready: false
+
+variant_filters:
+  min_depth: 30
+  min_alt_count: 3
+  min_alt_frequency: 0.02
+  consensus_frequency: 0.50
+  sensitivity_alt_frequency: [0.01, 0.02, 0.05]
+
+raw_feature_outputs:
+  variant_frequency_long: data/processed/phase2_sarscov2_multicase/weigang_variant_frequency_long.csv
+  mutation_frequency_matrix: data/processed/phase2_sarscov2_multicase/weigang_mutation_frequency_matrix.csv
+  raw_hrsm_state_table: results/phase2_sarscov2_multicase/weigang_raw_hrsm_state_table.csv
+  raw_feature_audit: metadata/phase2_sarscov2_multicase/weigang_raw_feature_audit.csv
+
+hrsm_mapping:
+  H_v:
+    status: requires_raw_variants
+    candidates:
+      - retained_variant_count
+      - allele_frequency_entropy
+      - low_frequency_variant_count
+      - within_host_diversity_burden
+  R_v:
+    status: missing_until_clinical_proxy_recovered
+    candidates:
+      - ct_value
+      - viral_load
+      - culture_positive
+      - rebound_or_clearance_endpoint
+  S_v:
+    status: requires_raw_variants
+    candidates:
+      - dominant_genotype_concentration
+      - top_variant_frequency_mass
+      - inverse_entropy
+      - immune_escape_backbone_coherence
+  M_v:
+    status: requires_longitudinal_raw_variants
+    candidates:
+      - lagged_cosine_similarity
+      - retained_mutation_burden
+      - reappearing_variant_count
+      - day_decayed_memory_kernel
+
+failure_guards:
+  - Do not interpret sequencing depth as biological reserve.
+  - Do not compute R_v from read depth.
+  - Do not mix isolate controls into the primary swab trajectory.
+  - Do not report HRSM axes before mutation-frequency features are computed.

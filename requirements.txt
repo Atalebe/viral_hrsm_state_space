@@ -8,3 +8,4 @@ biopython>=1.81
 statsmodels>=0.14
 tabulate>=0.9
 beautifulsoup4>=4.12
+PyYAML>=6.0

@@ -1,0 +1,2 @@
+case_id,protocol_status,expected_days,observed_days,n_timepoints,n_runs,n_planned_files,raw_download_ready,min_depth,min_alt_count,min_alt_frequency,consensus_frequency,protocol_ok,next_required
+WEIGANG_2021_ERP132087,frozen_before_download,0|7|14|42|56|59|71|105|140,0|7|14|42|56|59|71|105|140,9,9,18,False,30,3,0.02,0.5,True,"only after this audit passes, create raw download script with explicit user-run command"
