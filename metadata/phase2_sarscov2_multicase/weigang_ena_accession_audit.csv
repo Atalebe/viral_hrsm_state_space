@@ -1,0 +1,2 @@
+accession,raw_table,n_rows,n_unique_samples,n_unique_runs,has_fastq_ftp,has_submitted_ftp,status,error
+ERP132087,metadata/phase2_sarscov2_multicase/weigang_erp132087_ena_read_run.tsv,12,12,12,True,True,queried,

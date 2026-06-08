@@ -705,3 +705,26 @@ Phase V, phage experimental evolution.
 
 \textbf{Failure guard:} Chaguza should only proceed if accession-level files and longitudinal sample mapping can be recovered. A long infection duration alone is not sufficient for HRSM extraction.
 
+
+\section*{Entry 034: Weigang Phase II accession audit initiated}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To audit Weigang et al. as the next Phase II candidate after Boyle was blocked by missing patient grouping and Chaguza exposed no accession candidates in the PMC article text.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/12\_audit\_weigang\_accessions.py}
+\end{itemize}
+
+\textbf{Rationale:} Weigang et al. is a longitudinal immunosuppressed-patient SARS-CoV-2 within-host evolution case. It is therefore closer to the Phase I Kemp trajectory problem than broad panel datasets.
+
+\textbf{Files generated:}
+\begin{itemize}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/weigang\_article\_accession\_summary.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/weigang\_article\_links.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/weigang\_accession\_candidates.csv}
+    \item \texttt{metadata/phase2\_sarscov2\_multicase/weigang\_ena\_accession\_audit.csv}
+\end{itemize}
+
+\textbf{Failure guard:} Weigang should proceed only if accession-level files, longitudinal sample mapping, or extractable mutation-frequency tables are recovered.

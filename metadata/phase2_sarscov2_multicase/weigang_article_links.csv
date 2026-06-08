@@ -1,0 +1,175 @@
+article_url,anchor_text,href,tags
+https://www.nature.com/articles/s41467-021-26602-3,Log in,https://idp.nature.com/auth/personal/springernature?redirect_uri=https://www.nature.com/articles/s41467-021-26602-3?error=cookies_not_supported&code=4c25deba-f3f3-4c31-8c77-1f262f310031,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,Download PDF,https://www.nature.com/articles/s41467-021-26602-3.pdf,downloadable_candidate
+https://www.nature.com/articles/s41467-021-26602-3,https://www.ebi.ac.uk/ena/browser,https://www.ebi.ac.uk/ena/browser,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,www.gisaid.org,http://www.gisaid.org,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,http://gisaid.org/,http://gisaid.org/,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,Source data,https://www.nature.com/articles/s41467-021-26602-3#Sec26,data_candidate
+https://www.nature.com/articles/s41467-021-26602-3,ADS,http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2020Sci...370.1227W,data_candidate
+https://www.nature.com/articles/s41467-021-26602-3,ADS,http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2020Sci...369.1255C,data_candidate
+https://www.nature.com/articles/s41467-021-26602-3,ADS,http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2021Sci...372.1108V,data_candidate
+https://www.nature.com/articles/s41467-021-26602-3,ADS,http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2020Natur.581..465W,data_candidate
+https://www.nature.com/articles/s41467-021-26602-3,ADS,http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2021Natur.591..293J,data_candidate
+https://www.nature.com/articles/s41467-021-26602-3,ADS,http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2017NatCo...815050W,data_candidate
+https://www.nature.com/articles/s41467-021-26602-3,ADS,http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2011PLoSO...625858B,data_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Sebastian%20Weigang,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Jonas%20Fuchs,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Gert%20Zimmer,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Daniel%20Schnepf,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Lisa%20Kern,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Julius%20Beer,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Hendrik%20Luxenburger,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Jakob%20Ankerhold,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Valeria%20Falcone,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Janine%20Kemming,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Maike%20Hofmann,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Robert%20Thimme,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Christoph%20Neumann-Haefelin,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Svenja%20Ulferts,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Robert%20Grosse,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Daniel%20Hornuss,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Yakup%20Tanriver,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Siegbert%20Rieg,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Dirk%20Wagner,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Daniela%20Huzly,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Martin%20Schwemmle,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Marcus%20Panning,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,PubMed,https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=Georg%20Kochs,accession_candidate
+https://www.nature.com/articles/s41467-021-26602-3,Supplementary Information (download PDF ),https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-021-26602-3/MediaObjects/41467_2021_26602_MOESM1_ESM.pdf,supplement_candidate;downloadable_candidate
+https://www.nature.com/articles/s41467-021-26602-3,Peer Review File (download PDF ),https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-021-26602-3/MediaObjects/41467_2021_26602_MOESM2_ESM.pdf,downloadable_candidate
+https://www.nature.com/articles/s41467-021-26602-3,Reporting Summary (download PDF ),https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-021-26602-3/MediaObjects/41467_2021_26602_MOESM3_ESM.pdf,downloadable_candidate
+https://www.nature.com/articles/s41467-021-26602-3,Source Data (download XLSX ),https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-021-26602-3/MediaObjects/41467_2021_26602_MOESM4_ESM.xlsx,data_candidate;downloadable_candidate
+https://www.nature.com/articles/s41467-021-26602-3,Research data,https://www.springernature.com/gp/authors/research-data,data_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Skip to main content,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#main-content,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,,https://www.ncbi.nlm.nih.gov/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Dashboard,https://www.ncbi.nlm.nih.gov/myncbi/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Publications,https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Account settings,https://www.ncbi.nlm.nih.gov/account/settings/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,,https://pmc.ncbi.nlm.nih.gov/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Journal List,https://pmc.ncbi.nlm.nih.gov/journals/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,User Guide,https://pmc.ncbi.nlm.nih.gov/about/userguide/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/pdf/cancers-13-05488.pdf,downloadable_candidate;accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PMC Disclaimer,https://pmc.ncbi.nlm.nih.gov/about/disclaimer/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PMC Copyright Notice,https://pmc.ncbi.nlm.nih.gov/about/copyright/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Search in PMC,"https://pmc.ncbi.nlm.nih.gov/search/?term=""Cancers%20(Basel)""[jour]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Search in PubMed,"https://pubmed.ncbi.nlm.nih.gov/?term=""Cancers%20(Basel)""[jour]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,View in NLM Catalog,"https://www.ncbi.nlm.nih.gov/nlmcatalog?term=""Cancers%20(Basel)""[Title%20Abbreviation]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Add to search,"https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/?term=""Cancers%20(Basel)""[jour]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Clara Curiel-Lewandrowski,"https://pubmed.ncbi.nlm.nih.gov/?term=""Curiel-Lewandrowski%20C""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Caitlyn N Myrdal,"https://pubmed.ncbi.nlm.nih.gov/?term=""Myrdal%20CN""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Kathylynn Saboda,"https://pubmed.ncbi.nlm.nih.gov/?term=""Saboda%20K""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Chengcheng Hu,"https://pubmed.ncbi.nlm.nih.gov/?term=""Hu%20C""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Edith Arzberger,"https://pubmed.ncbi.nlm.nih.gov/?term=""Arzberger%20E""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Giovanni Pellacani,"https://pubmed.ncbi.nlm.nih.gov/?term=""Pellacani%20G""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Franz Josef Legat,"https://pubmed.ncbi.nlm.nih.gov/?term=""Legat%20FJ""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Martina Ulrich,"https://pubmed.ncbi.nlm.nih.gov/?term=""Ulrich%20M""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Petra Hochfellner,"https://pubmed.ncbi.nlm.nih.gov/?term=""Hochfellner%20P""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Margaret C Oliviero,"https://pubmed.ncbi.nlm.nih.gov/?term=""Oliviero%20MC""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Paola Pasquali,"https://pubmed.ncbi.nlm.nih.gov/?term=""Pasquali%20P""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Melissa Gill,"https://pubmed.ncbi.nlm.nih.gov/?term=""Gill%20M""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Rainer Hofmann-Wellenhof,"https://pubmed.ncbi.nlm.nih.gov/?term=""Hofmann-Wellenhof%20R""[Author]",accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PMC Copyright notice,https://pmc.ncbi.nlm.nih.gov/about/copyright/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,34771651,https://pubmed.ncbi.nlm.nih.gov/34771651/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,1,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B1-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,2,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B2-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,3,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B3-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,4,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B4-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,5,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B5-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,6,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B6-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,7,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B7-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,8,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B8-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,9,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B9-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,10,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B10-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,11,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B11-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,12,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B12-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,13,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B13-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,14,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B14-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,15,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B15-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,16,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B16-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,17,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B17-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,18,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B18-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,19,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B19-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,20,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B20-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,21,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B21-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,22,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B22-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Table 1,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#cancers-13-05488-t001,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Open in a new tab,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/table/cancers-13-05488-t001/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Table 2,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#cancers-13-05488-t002,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Open in a new tab,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/table/cancers-13-05488-t002/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Table 3,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#cancers-13-05488-t003,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Open in a new tab,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/table/cancers-13-05488-t003/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Table 4,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#cancers-13-05488-t004,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Open in a new tab,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/table/cancers-13-05488-t004/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Figure 1,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#cancers-13-05488-f001,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,,https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=8583298_cancers-13-05488-g001.jpg,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Open in a new tab,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/figure/cancers-13-05488-f001/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Supplementary Figure S1,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#app1-cancers-13-05488,supplement_candidate;accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,23,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B23-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,24,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B24-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,25,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B25-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,26,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B26-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,27,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B27-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,28,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B28-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,29,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B29-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Supplementary Table S1,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#app1-cancers-13-05488,supplement_candidate;accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,30,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B30-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,31,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B31-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,32,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B32-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,33,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B33-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,34,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B34-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,35,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B35-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,36,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/#B36-cancers-13-05488,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Click here for additional data file.,https://pmc.ncbi.nlm.nih.gov/articles/instance/8583298/bin/cancers-13-05488-s001.zip,data_candidate;downloadable_candidate;accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,CA229112,https://www.ncbi.nlm.nih.gov/nuccore/CA229112,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/9092763/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/10607351/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PMC free article,https://pmc.ncbi.nlm.nih.gov/articles/PMC9293336/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/34633154/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/33482254/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/24861492/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/10863222/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/19732253/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/19907131/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Google Scholar,https://scholar.google.com/scholar_lookup?journal=Dermatology&title=Reflectance%20Confocal%20Microscopy%20for%20Noninvasive%20Monitoring%20of%20Therapy%20and%20Detection%20of%20Subclinical%20Actinic%20Keratoses&author=M.%20Ulrich&author=D.%20Krueger-Corcoran&author=J.%20Roewert-Huber&author=W.%20Sterry&author=E.%20Stockfleth&volume=220&publication_year=2010&pages=15-24&pmid=19907131&doi=10.1159/000254893&,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/22591654/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/26274903/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/29178474/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/30066970/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/31838781/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Google Scholar,https://scholar.google.com/scholar_lookup?journal=J.%20Eur.%20Acad.%20Dermatol.%20Venereol.&title=Digital%20Follow-up%20by%20Means%20of%20Dermatoscopy%20and%20Reflectance%20Confocal%20Microscopy%20of%20Actinic%20Keratosis%20Treated%20with%20Imiquimod%203.75%%20Cream&author=E.%20Benati&author=S.%20Longhitano&author=R.%20Pampena&author=M.%20Mirra&author=M.%20Raucci&volume=34&publication_year=2020&pages=1471-1477&pmid=31838781&doi=10.1111/jdv.16143&,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/18429925/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/32585761/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/19620557/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/27298142/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/18261097/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/1869646/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/7769264/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/10469324/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/26948927/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/30721758/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/24696069/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Google Scholar,https://scholar.google.com/scholar_lookup?journal=Acta%20Derm.%20Venerol.&title=Monitoring%20Treatment%20of%20Field%20Cancerisation%20with%203%%20Diclofenac%20Sodium%202.5%%20Hyaluronic%20Acid%20by%20Reflectance%20Confocal%20Microscopy:%20A%20Histologic%20Correlation&author=J.%20Malvehy&author=R.%20Rold%C3%A1n-Mar%C3%ADn&author=P.%20Iglesias-Garc%C3%ADa&author=A.%20D%C3%ADaz&author=S.%20Puig&volume=95&publication_year=2015&pages=45-50&pmid=24696069&doi=10.2340/00015555-1860&,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/26538346/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/29856463/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Google Scholar,https://scholar.google.com/scholar_lookup?journal=Acta%20Derm.%20Venerol.&title=Assessment%20of%20the%20Effect%20of%203%%20Diclofenac%20Sodium%20on%20Photodamaged%20Skin%20by%20Means%20of%20Reflectance%20Confocal%20Microscopy&author=G.%20Segurado-Miravalles&author=N.%20Jim%C3%A9nez-G%C3%B3mez&author=O.%20Moreno-Arrones&author=I.%20Alarc%C3%B3n-Salazar&author=A.%20Alegre-S%C3%A1nchez&volume=98&publication_year=2018&pages=963-969&pmid=29856463&doi=10.2340/00015555-2984&,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/26949030/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/28960520/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/30207022/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Google Scholar,https://scholar.google.com/scholar_lookup?journal=J.%20Microsc.&title=Aberrations%20in%20Confocal%20Fluorescence%20Microscopy%20Induced%20by%20Mismatches%20in%20Refractive%20Index&author=S.%20Hell&author=G.%20Reiner&author=C.%20Cremer&author=E.H.K.%20Stelzer&volume=169&publication_year=1993&pages=391-405&doi=10.1111/j.1365-2818.1993.tb03315.x&,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/25428612/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/25993262/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PMC free article,https://pmc.ncbi.nlm.nih.gov/articles/PMC6599879/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/23235610/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Google Scholar,https://scholar.google.com/scholar_lookup?journal=Cochrane%20Database%20Syst.%20Rev.&title=Interventions%20for%20Actinic%20Keratoses&author=A.K.%20Gupta&author=M.%20Paquet&author=E.%20Villanueva&author=W.%20Brintnell&publication_year=2012&pmid=23235610&doi=10.1002/14651858.CD004415.pub2&,data_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/30887613/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/28796914/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PubMed,https://pubmed.ncbi.nlm.nih.gov/29526028/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,PDF (738.8 KB),https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/pdf/cancers-13-05488.pdf,downloadable_candidate;accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Download .nbib .nbib,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,Please try again,https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,NCBI on X (formerly known as Twitter),https://twitter.com/ncbi,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,NCBI on Facebook,https://www.facebook.com/ncbi.nlm,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,NCBI on LinkedIn,https://www.linkedin.com/company/ncbinlm,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,NCBI on GitHub,https://github.com/ncbi,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,NCBI RSS feed,https://ncbiinsights.ncbi.nlm.nih.gov/,accession_candidate
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8583298/,"National Library of Medicine 8600 Rockville Pike Bethesda, MD 20894","https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/%4038.9959508,            -77.101021,17z/data%3D!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb%3A0x19156f88b27635b8!8m2!3d38.9959508!            4d-77.0988323",data_candidate
