@@ -34,7 +34,7 @@ def main():
     if missing:
         raise ValueError(f"Primary map missing expected columns: {missing}")
 
-    out = pd.DataFrame()
+    out = pd.DataFrame(index=primary.index)
     out["case_id"] = "WEIGANG_2021_ERP132087"
     out["patient_or_infection_id"] = primary.get("patient_or_infection_id", "1")
     out["sample_title"] = primary["sample_title"]
