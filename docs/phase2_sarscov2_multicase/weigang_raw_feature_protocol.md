@@ -26,7 +26,7 @@ Excluded from the first raw-feature branch:
 - isolate day 105
 - isolate day 105 deletion sample
 
-The isolate samples are retained as controls and should not be mixed into the primary swab trajectory.
+The isolate samples are retained as controls and must not be mixed into the primary swab trajectory.
 
 ## Input data
 

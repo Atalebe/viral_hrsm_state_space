@@ -819,3 +819,19 @@ Phase V, phage experimental evolution.
 \textbf{Interpretation:} The Weigang raw branch is now protocol-defined but not downloaded. The primary trajectory remains restricted to nine swab samples. Isolate samples remain excluded from the primary branch. \(R_v\) remains unavailable until a clinical proxy such as Ct, viral load, culture status, or endpoint is recovered.
 
 \textbf{Failure guard:} No raw sequencing files should be downloaded or interpreted until the frozen protocol audit passes. Sequencing depth remains a technical variable, not a biological HRSM axis.
+
+\section*{Entry 040: Weigang controlled FASTQ download script added}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To add a controlled, resumable raw FASTQ download script for the mapped Weigang primary swab trajectory.
+
+\textbf{Script added:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/20\_download\_weigang\_primary\_swab\_fastqs.py}
+\end{itemize}
+
+\textbf{Interpretation:} The script is gated by the frozen raw-feature protocol audit and downloads only the 18 planned submitted FASTQ files for the nine primary swab timepoints.
+
+\textbf{Failure guard:} This script should be run only when ready to download raw sequencing files. It is resumable and records file sizes and SHA256 hashes after download.
+
