@@ -1,0 +1,2 @@
+case_id,n_primary_swab_timepoints,min_day,max_day,days,n_isolate_controls,metadata_scaffold_written,hrsm_ready,interpretation
+WEIGANG_2021_ERP132087,9,0,140,0|7|14|42|56|59|71|105|140,3,True,False,Mapped longitudinal scaffold only. Raw-derived viral features are required before HRSM axes can be interpreted.

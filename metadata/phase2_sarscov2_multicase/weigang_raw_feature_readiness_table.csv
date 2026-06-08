@@ -1,0 +1,5 @@
+feature_family,required_feature,current_status,possible_source,notes
+H_v reserve,mutation_count or within-host diversity,missing,FASTQ/BAM variant calling or published mutation table,Read depth alone is only a technical proxy and must not be used as biological reserve.
+R_v recoverability,"Ct, viral load, culture status, or rebound/clearance proxy",missing,paper clinical timeline or supplementary tables,No recoverability axis should be computed from sequencing depth.
+S_v stability/coherence,dominant genotype/escape backbone coherence,missing,variant frequency table or raw-derived allele frequencies,Can be estimated after mutation-frequency extraction.
+M_v memory,lagged genotype similarity or retained mutation structure,missing,longitudinal mutation-frequency matrix,"Weigang days are mapped, so M_v can be computed once mutation features exist."
