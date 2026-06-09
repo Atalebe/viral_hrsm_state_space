@@ -835,3 +835,28 @@ Phase V, phage experimental evolution.
 
 \textbf{Failure guard:} This script should be run only when ready to download raw sequencing files. It is resumable and records file sizes and SHA256 hashes after download.
 
+
+\section*{Entry 041: Weigang primary swab FASTQ files downloaded}
+
+\textbf{Date:} \today
+
+\textbf{Purpose:} To download the raw FASTQ files for the mapped Weigang primary swab trajectory after the raw-feature protocol audit passed.
+
+\textbf{Script executed:}
+\begin{itemize}
+    \item \texttt{scripts/phase2\_sarscov2\_multicase/20\_download\_weigang\_primary\_swab\_fastqs.py}
+\end{itemize}
+
+\textbf{Result:}
+\begin{itemize}
+    \item Planned files: \texttt{18}
+    \item Downloaded or existing files: \texttt{18}
+    \item Failed files: \texttt{0}
+    \item Total bytes: \texttt{1128450798}
+    \item Download log: \texttt{metadata/phase2\_sarscov2\_multicase/weigang\_primary\_swab\_fastq\_download\_log.csv}
+\end{itemize}
+
+\textbf{Interpretation:} The Weigang raw branch is now locally staged for the nine primary swab timepoints. Each downloaded FASTQ file has a SHA256 checksum recorded in the download log.
+
+\textbf{Failure guard:} Raw FASTQ files must not be committed to Git. Only the download log, checksums, scripts, and derived lightweight metadata should be tracked.
+
